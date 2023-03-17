@@ -37,6 +37,7 @@ h2{
 }
 header{
     background-color: brown;
+    border-radius: 25% 25% 0 0;
 }
 header nav ul li{
     box-sizing:border-box;
@@ -94,11 +95,12 @@ main h2{
 footer{
     background-color: rgb(179, 31, 31);
     color: white;
+    border-radius: 0 0 30% 30%;
     text-align: center;
 }
 footer a{
     background-color: aliceblue;
-    border-radius: 25%;
+    border-radius: 20%;
     color: rgb(179, 31, 31);
 
 }
