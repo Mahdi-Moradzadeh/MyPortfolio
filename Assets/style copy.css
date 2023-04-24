@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    /* line-height: 1; */
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./IMG/space.jpeg);
+    background-attachment: fixed;
+    display: inline-block;
+    text-align: justify;
+}
+
+aside nav, main{
+    background-color: white;
+}
+
+p::first-letter{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+header, footer{
+    background-color: brown;
+    border: 2px;
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+
+}
+
+header nav ul,
+header nav ul li,
+header nav ul li a
+{
+    color: aliceblue;
+    background-color: brown;
+    display: inline-block;
+    margin-block-start: 0;
+    padding: 0 10px;
+}
+
+header nav ul {
+    display: inline-block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+h1{
+    background-color: white;
+    border: 10px;
+    border-radius: 45%;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 20px 44%;
+
+}
+header nav {
+    margin: 10px;
+}
+
+.sideBar{
+    width: 20%;
+    display: flexbox;
+    float: left;
+    position: fixed;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sideBar ul li{
+    list-style: none;
+    width: 150px;
+    height: 25px;
+}
+
+a:hover, .sideBar li:hover{
+    color: azure;
+    background-color: black;
+}
+
+.box   {
+    margin: 5px 5px 0 20%;
+    padding: 5px;
+    
+}
