@@ -4,127 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./Assets/normalize.css">
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./Assets/style.css"> -->
+    <link href="./Assets/style copy.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <section>
-            <h1>My Portfolio</h1>
+            <h1 class="">My Portfolio</h1>
         </section>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#past">Past Work</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#funFact">Fun Fact</a></li>
-                <li><a href="#contact">Contact me</a></li>
-                <li><a href="https://timebytes.github.io/Movie-Dashboard/" target="_blank">Link to My First Project</a></li>
-            </ul>
-            <input type="text" placeholder="Search here">
-            <button>Search</button>
-        </nav>
+        <nav class="container text-center navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#past">Past Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#funFact">Fun Fact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact Me
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="tel:+1-416-858-1606" target="_blank">Phone Number</a></li>
+                      <li><a class="dropdown-item" href="mailto:m*******m@gmail.com" target="_blank">E-mail</a></li>
+                      <li><a class="dropdown-item" href="https://github.com/Mahdi-Moradzadeh" target="_blank">GitHub</a></li>
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/mahdimoradzadeh/" target="_blank">LinkedIn</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./socialMedia.html" target="_blank">Social Media</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        
     </header>
-    <aside>
-        <nav class="sideBar">
-            <ul>
-                <li><a href="#about"><h3>About Me</h3></a></li>
-                <br>
-                <li><a href="#past"><h3>Past Work</h3></a></li>
-                <br>
-                <li><a href="#education"><h3>Education</h3></a></li>
-                <br>
-                <li><a href="#funFact"><h3>Fun Fact</h3></a></li>
-            </ul>
-        </nav>
-    </aside>
-    
-    <main class="box">
-        <figure>
-            <img class="profile" src="./Assets/IMG/Profile pic.jpeg" alt="Author's Profile Picture">
-        </figure>
-        <section>
-            <span>
-                <h2 id="about">About Me</h2>
-                <article>
-                    <p>I am a 25 year old Canadian student of University of Toronto participating in part-time bootcamp program. 
-                        I have completed my Bacholers and MASc degree in civil engineering from Toronto Metropolitan University (formarly known as Ryerson University). 
-                        I have always known that programming was my passion ever since my first programing lesson back in 9th grade; however I also had an interest in 
-                        engineering since my childhood due to my ability in fixing and putting things together.</p>
+    <div class="container">
+        <div class="row align-items-start">
+            <aside  class="col text-center" id="sidebar">
+                <nav class="inner">
+                    <ul style="list-style-type: none;" id="test2">
+                        <li class="btn btn-danger rounded-pill px-5"><a href="#about" class="scrolly active"><h3>About Me</h3></a></li>
                         <br>
-                    <p>I hope using the tools provided in this bootcamp, I can put together my engineering skills and programming ability that I have gained to apply 
-                        myself in an environment where I can grow with</p>
-                </article>
-            </span>
-            <span>
-                <h2 id="past">Past Work</h2>
-                <h3>Skills and Programs</h3>
-                <p>I have explored many application and have aquired many skills throughout my journey. One of few are, moderate understanding of programing in C and C++ languages,
-                     beginner in python, average understandning of matlab, excellent skillset in the microsoft suites (e.g. word, excel, etc.), confindent in my abilities to work with
-                    AutoCAD, SAP, Safe and ETABs.
-                </p>
-                <br>
-                <p>I have acquired team working and excelled in communication skills during the completion of my Bacholers degree and have been succesful at expanding my connection network
-                    outside of my field of study. I am passionate about the things that are my responsibility and provide my unequivocal attention in direction of completing the tasks at hand.
-                </p>
-            </span>
-            <span>
-                <h2 id="education">Education</h2>
-                <h3>Masters of Applied Sciences</h3>
-                <p>During the completion of my masters degree, I had focused on a rare condition that occurs to concrete structures of basement walls and foundations.
-                    The reason for such phenomenons are found to be originated from presence of sulphate in aggregates within the concrete matrix or scientifically known as Internal
-                    Sulphate attack (a.k.a. ISA). Due to lack of information regarding the stated topic, I was tasked to attemp in finding an accelerated method that
-                    can identify adequacy of aggregates used in concrete to remain uneffected under extreme conditions.
-                </p>
-                <br>
-                <p>I have succesfully discovered two new revolutionary methods that could possibly define the adequacy of aggregates to be used by the industry. This ground breaking
-                    discovery is currnetly under further investigation to be published and presented to the Canadian Standard Association of concrete structures or CSA as the possible
-                    examination process in a universal scale.
-                </p>
-                <br>
-            </span>
-            <span>
-                <h2 id="funFact">Fun Facts</h2>
-                <p>Some of fun facts that may surprise people can be further categorized into two groups of interests and hobbies where I go into detail about things I am passionate
-                    to aquire more knowledge about (interests), and things that I love to spend time on during my free hours.
-                </p>
-                <br>
-                <h3>Interests</h3>
-                <ul>
-                    <li>Continuing to expand my knowledge in learning about different languages and cultures</li>
-                    <li>Learning horseback riding</li>
-                    <li>Learn programing languages to expand my toolset</li>
-                    <li>Travel the world and visit historical venues</li>
-                    <li>Volunteer in communities and support the local events in association to my background and ethnicity</li>
-                </ul>
-                <br>
-                <h3 id="hobbies">Hobbies</h3>
-                <ul>
-                    <li>Composing and producing songs</li>
-                    <li>Reading philosophical and psychological books</li>
-                    <li>Play sports alike football (soccer) and basketball</li>
-                    <li>Self learning French as a third language</li>
-                    <li>Socializing with freinds and colleagues</li>
-                    <br>
-                </ul>
-            </span> 
-        </section>
+                        <li class="btn btn-danger rounded-pill px-5"><a href="#past" class="scrolly active"><h3>Past Work</h3></a></li>
+                        <br>
+                        <li class="btn btn-danger rounded-pill px-5"><a href="#education" class="scrolly active"><h3>Education</h3></a></li>
+                        <br>
+                        <li class="btn btn-danger rounded-pill px-5"><a href="#funFact" class="scrolly active"><h3>Fun Fact</h3></a></li>
+                    </ul>
+                </nav>
+            </aside>
+        
+            <main class="col-9" id="main4">
+                <figure>
+                    <img src="./Assets/IMG/Profile pic.jpeg" alt="Author's Profile Picture" id="profile-pic" >
+                </figure>
+                <section>
+                    <span>
+                        <h2 id="about">About Me</h2>
+                        <article>
+                            <p>I am a 25 year old Canadian student of University of Toronto participating in part-time bootcamp program.
+                                I have completed my Bacholers and MASc degree in civil engineering from Toronto Metropolitan University (formarly known as Ryerson University).
+                                I have always known that programming was my passion ever since my first programing lesson back in 9th grade; however I also had an interest in
+                                engineering since my childhood due to my ability in fixing and putting things together.</p>
+                                <br>
+                            <p>I hope using the tools provided in this bootcamp, I can put together my engineering skills and programming ability that I have gained to apply
+                                myself in an environment where I can grow with</p>
+                        </article>
+                    </span>
+                    <span>
+                        <h2 id="past">Past Work</h2>
+                        <h3>Skills and Programs</h3>
+                        <p>I have explored many application and have aquired many skills throughout my journey. One of few are, moderate understanding of programing in C and C++ languages,
+                             beginner in python, average understandning of matlab, excellent skillset in the microsoft suites (e.g. word, excel, etc.), confindent in my abilities to work with
+                            AutoCAD, SAP, Safe and ETABs.
+                        </p>
+                        <br>
+                        <p>I have acquired team working and excelled in communication skills during the completion of my Bacholers degree and have been succesful at expanding my connection network
+                            outside of my field of study. I am passionate about the things that are my responsibility and provide my unequivocal attention in direction of completing the tasks at hand.
+                        </p>
+                    </span>
+                    <span>
+                        <h2 id="education">Education</h2>
+                        <h3>Masters of Applied Sciences</h3>
+                        <p>During the completion of my masters degree, I had focused on a rare condition that occurs to concrete structures of basement walls and foundations.
+                            The reason for such phenomenons are found to be originated from presence of sulphate in aggregates within the concrete matrix or scientifically known as Internal
+                            Sulphate attack (a.k.a. ISA). Due to lack of information regarding the stated topic, I was tasked to attemp in finding an accelerated method that
+                            can identify adequacy of aggregates used in concrete to remain uneffected under extreme conditions.
+                        </p>
+                        <br>
+                        <p>I have succesfully discovered two new revolutionary methods that could possibly define the adequacy of aggregates to be used by the industry. This ground breaking
+                            discovery is currnetly under further investigation to be published and presented to the Canadian Standard Association of concrete structures or CSA as the possible
+                            examination process in a universal scale.
+                        </p>
+                        <br>
+                    </span>
+                    <span>
+                        <h2 id="funFact">Fun Facts</h2>
+                        <p>Some of fun facts that may surprise people can be further categorized into two groups of interests and hobbies where I go into detail about things I am passionate
+                            to aquire more knowledge about (interests), and things that I love to spend time on during my free hours.
+                        </p>
+                        <br>
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Continuing to expand my knowledge in learning about different languages and cultures</li>
+                            <li>Learning horseback riding</li>
+                            <li>Learn programing languages to expand my toolset</li>
+                            <li>Travel the world and visit historical venues</li>
+                            <li>Volunteer in communities and support the local events in association to my background and ethnicity</li>
+                        </ul>
+                        <br>
+                        <h3 id="hobbies">Hobbies</h3>
+                        <ul>
+                            <li>Composing and producing songs</li>
+                            <li>Reading philosophical and psychological books</li>
+                            <li>Play sports alike football (soccer) and basketball</li>
+                            <li>Self learning French as a third language</li>
+                            <li>Socializing with freinds and colleagues</li>
+                            <br>
+                        </ul>
+                    </span>
+                </section>
+            </main>
+        </div>
+    </div>
 
-    </main>
 
-
-    <footer>
-        <span class="contactInfo">
+    <footer class="py-3 my-4 text-center border-top">
+        <span class="contactInfo justify-content-center">
             <h2 id="contact">Contact Me</h2>
         </span> 
-        <ul>
-            <li><strong>E-mail Me: </strong><a href="mailto:morad97mm@gmail.com">morad97mm@gmail.com</a></li>
-            <li><strong>Call or text me: </strong><a href="tel:+1-416-858-1606">(416) 858-1606</a></li>
-            <li><strong>GITHUB: </strong><a href="https://github.com/Mahdi-Moradzadeh">My GitHub Page</a></li>
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><strong>E-mail Me: </strong><a href="mailto:m*******m@gmail.com" class="nav-link px-2 text-body-secondary">m*******m@gmail.com &nbsp;</a></li>
+            <li class="nav-item"><strong>Call or text me: </strong><a href="tel:+1-123-456-7890" class="nav-link px-2 text-body-secondary">(123) 456-7890 &nbsp;</a></li>
+            <li class="nav-item"><strong>GITHUB: </strong><a href="https://github.com/Mahdi-Moradzadeh" class="nav-link px-2 text-body-secondary">My GitHub Page &nbsp;</a></li>
+            <li class="nav-item"><strong>LinkedIn Profile: </strong><a href="https://www.linkedin.com/in/mahdimoradzadeh/" class="nav-link px-2 text-body-secondary">LinkedIn &nbsp;</a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

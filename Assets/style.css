@@ -65,13 +65,12 @@ header nav ul li{
 }
 
 aside{
-    position: static;
-    float: left;
+    flex: 1;
+    position: fixed;
     padding: 80% 20% 32% 6%;
     margin: auto;
 }
 .sideBar{
-    position: relative;
     text-align: center;
     box-sizing: border-box;
 
@@ -80,11 +79,14 @@ aside{
     font-style:none;
 }
 
-main {
+.box {
     padding: 0% 10% 0% 20%;
     background-color: aliceblue;
 }
-
+main{
+    flex: 1;
+    margin-left: 25%;
+}
 main h2{
     font-style: italic;
 }
@@ -135,4 +137,8 @@ a :hover {
     text-shadow: 10px;
     box-shadow: 20%;
     font-style: none;
+}
+
+.flexDisplay{
+    display: flex;
 }
